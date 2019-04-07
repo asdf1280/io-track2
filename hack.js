@@ -1,15 +1,9 @@
 // ==UserScript==
-// @name        ScriptSource: The Leading Portal for Web Apps [YouTube / Reddit / MooMoo.io / Krunker.io]
+// @name        ScriptSource hack
 // @namespace    -
-// @version      38.5
 // @description  Currently trusted by over 100,000 users!
-// @author       Sammy «Z»#7383
-// @match        *://*.youtube.com/*
-// @match        *://diservers.org/*
-// @match        *://moomoo.io/*
+// @author       enterPwd
 // @match        *://krunker.io/*
-// @match        http://dev.moomoo.io/*
-// @match        *sandbox.moomoo.io/*
 // @include      /^(https?:\/\/)?(www\.)?(.+)krunker\.io(|\/|\/\?(server|party)=.+)$/
 // @grant        GM_xmlhttpRequest
 // @require https://greasyfork.org/scripts/368273-msgpack/code/msgpack.js?version=598723
@@ -22,7 +16,7 @@
 var msgpack5 = msgpack;
 
 if (window.location.href.includes("moomoo")){
-    $(document).ready(() => {
+    $(document).ready(() => {	
 
 //Neat cursor: credit to FlareZ 3301#6016
 $("#gameCanvas").css('cursor', 'url(http://cur.cursors-4u.net/user/use-1/use153.cur), default');
