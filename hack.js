@@ -1936,11 +1936,6 @@ font-weight: 300;
 `))
 document.head.appendChild(styleItem);
 
-$("#enterGame").click( () => {
-     window.open("http://scriptsourceapp.com/portal.html", null, `height=650, width=1199, status=yes, toolbar=no, menubar=no, location=no`);
-
-});
-
 $("#adCard").css({display: "none"});
 
 $("#youtuberOf").css({display: "none"});
@@ -1948,10 +1943,6 @@ let newImg = document.createElement("img");
 newImg.src = "https://i.imgur.com/OZL1PXR.png";
 newImg.style = `position: absolute; top: 15px; left: 15px; z-index: 100000; width: 50px; height: 50px; cursor: pointer;`;
 document.body.prepend(newImg);
-
-newImg.addEventListener("click", () => {
-       let w = window.open("http://scriptsourceapp.com/portal.html", null, `height=650, width=1199, status=yes, toolbar=no, menubar=no, location=no`);
-});
 
 var iPressKey;
 var placeName;
@@ -3227,7 +3218,7 @@ unsafeWindow.Ze2 = unsafeWindow.Ze = (t, e, i) => {
 
 
 
-unsafeWindow.mdlsettingsmain = {bhop: true, autoaim: 1, info: true};
+unsafeWindow.mdlsettingsmain = {bhop: false, autoaim: 2, info: true};
 unsafeWindow.mdlsettings = {screenaim: false};
 
 
@@ -3948,9 +3939,6 @@ setTimeout( () => {
              btn.innerText = "Get Time!";
              document.querySelector("#meta-contents").appendChild(btn);
              currentTitle = document.title;
-             $(btn).click(() => {
-                 let w = window.open("http://scriptsourceapp.com/portal.html?yturl="+window.location.href.split("v=")[1], null, `height=497, width=1009, status=yes, toolbar=no, menubar=no, location=no`);
-             });
          }
      }
   }, 50);
