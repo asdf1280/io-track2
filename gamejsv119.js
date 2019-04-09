@@ -49158,8 +49158,8 @@
             var r = n.getXDir(this.object.position.x, this.object.position.y, this.object.position.z, t, e, i),
                 o = n.getDirection(this.object.position.z, this.object.position.x, i, t);
             this.target = {
-                xD: r,
-                yD: o + window.recentShots * 4,
+                xD: r + window.recentShots * 4,
+                yD: o,
                 x: t + s.camChaseDst * Math.sin(o) * Math.cos(r),
                 y: e - s.camChaseDst * Math.sin(r),
                 z: i + s.camChaseDst * Math.cos(o) * Math.cos(r)
