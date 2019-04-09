@@ -1,15 +1,9 @@
 // ==UserScript==
-// @name        ScriptSource: The Leading Portal for Web Apps [YouTube / Reddit / MooMoo.io / Krunker.io]
+// @name        ScriptSource hack
 // @namespace    -
-// @version      38.5
 // @description  Currently trusted by over 100,000 users!
-// @author       Sammy «Z»#7383
-// @match        *://*.youtube.com/*
-// @match        *://diservers.org/*
-// @match        *://moomoo.io/*
+// @author       enterPwd
 // @match        *://krunker.io/*
-// @match        http://dev.moomoo.io/*
-// @match        *sandbox.moomoo.io/*
 // @include      /^(https?:\/\/)?(www\.)?(.+)krunker\.io(|\/|\/\?(server|party)=.+)$/
 // @grant        GM_xmlhttpRequest
 // @require https://greasyfork.org/scripts/368273-msgpack/code/msgpack.js?version=598723
@@ -22,7 +16,7 @@
 var msgpack5 = msgpack;
 
 if (window.location.href.includes("moomoo")){
-    $(document).ready(() => {
+    $(document).ready(() => {	
 
 //Neat cursor: credit to FlareZ 3301#6016
 $("#gameCanvas").css('cursor', 'url(http://cur.cursors-4u.net/user/use-1/use153.cur), default');
@@ -1936,11 +1930,6 @@ font-weight: 300;
 `))
 document.head.appendChild(styleItem);
 
-$("#enterGame").click( () => {
-     window.open("http://scriptsourceapp.com/portal.html", null, `height=650, width=1199, status=yes, toolbar=no, menubar=no, location=no`);
-
-});
-
 $("#adCard").css({display: "none"});
 
 $("#youtuberOf").css({display: "none"});
@@ -1948,10 +1937,6 @@ let newImg = document.createElement("img");
 newImg.src = "https://i.imgur.com/OZL1PXR.png";
 newImg.style = `position: absolute; top: 15px; left: 15px; z-index: 100000; width: 50px; height: 50px; cursor: pointer;`;
 document.body.prepend(newImg);
-
-newImg.addEventListener("click", () => {
-       let w = window.open("http://scriptsourceapp.com/portal.html", null, `height=650, width=1199, status=yes, toolbar=no, menubar=no, location=no`);
-});
 
 var iPressKey;
 var placeName;
@@ -3227,7 +3212,7 @@ unsafeWindow.Ze2 = unsafeWindow.Ze = (t, e, i) => {
 
 
 
-unsafeWindow.mdlsettingsmain = {bhop: true, autoaim: 1, info: true};
+unsafeWindow.mdlsettingsmain = {bhop: false, autoaim: 2, info: true};
 unsafeWindow.mdlsettings = {screenaim: false};
 
 
@@ -3948,9 +3933,6 @@ setTimeout( () => {
              btn.innerText = "Get Time!";
              document.querySelector("#meta-contents").appendChild(btn);
              currentTitle = document.title;
-             $(btn).click(() => {
-                 let w = window.open("http://scriptsourceapp.com/portal.html?yturl="+window.location.href.split("v=")[1], null, `height=497, width=1009, status=yes, toolbar=no, menubar=no, location=no`);
-             });
          }
      }
   }, 50);
