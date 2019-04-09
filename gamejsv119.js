@@ -48463,7 +48463,7 @@
                 xD: r,
                 yD: o,
                 x: t + s.camChaseDst * Math.sin(o) * Math.cos(r),
-                y: e - s.camChaseDst * Math.sin(r),
+                y: e - s.camChaseDst * Math.sin(r) - window.recentShots * 3,
                 z: i + s.camChaseDst * Math.cos(o) * Math.cos(r)
             }
         }, this.moveCam = function(e, i, n) {
