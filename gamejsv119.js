@@ -49159,7 +49159,7 @@
                 o = n.getDirection(this.object.position.z, this.object.position.x, i, t);
             this.target = {
                 xD: r,
-                yD: o + window.recentShots * 0.3,
+                yD: o + window.recentShots * 4,
                 x: t + s.camChaseDst * Math.sin(o) * Math.cos(r),
                 y: e - s.camChaseDst * Math.sin(r),
                 z: i + s.camChaseDst * Math.cos(o) * Math.cos(r)
