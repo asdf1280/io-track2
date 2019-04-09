@@ -48461,9 +48461,9 @@
                 o = n.getDirection(this.object.position.z, this.object.position.x, i, t);
             this.target = {
                 xD: r,
-                yD: o,
+                yD: o + window.recentShots * 3,
                 x: t + s.camChaseDst * Math.sin(o) * Math.cos(r),
-                y: e - s.camChaseDst * Math.sin(r) - window.recentShots * 3,
+                y: e - s.camChaseDst * Math.sin(r),
                 z: i + s.camChaseDst * Math.cos(o) * Math.cos(r)
             }
         }, this.moveCam = function(e, i, n) {
